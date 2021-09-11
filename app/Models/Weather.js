@@ -19,7 +19,7 @@ export class Weather {
         return Math.floor(temp)    
       }
       
-      cecliusConversion(){
+      celsiusConversion(){
     
       let celcius = ((this.kelvin - 273.15))
    
@@ -35,7 +35,7 @@ export class Weather {
         <div id = "temp">
         <h4 class = "temp-card">${this.weatherConversion()}&deg;F</h4> </div>
         <div id = "celsius" class = "visually-hidden">
-        <h4 class = "temp-card">${this.cecliusConversion()}&deg;C<h4>
+        <h4 class = "temp-card">${this.celsiusConversion()}&deg;C<h4>
         </div>
         <h3 class="text-center"><img class="currentweather img-fluid text-center pt-2" src="http://openweathermap.org/img/w/${this.icon}.png" alt=""/></h3>
         </div>
