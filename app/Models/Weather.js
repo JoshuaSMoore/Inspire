@@ -31,8 +31,14 @@ export class Weather {
     get Template(){
         return /*html*/`
         <div class = "col-m-12">
+        <div class = "selectable" onclick = "app.weatherController.tempChange()">
+        <div id = "temp">
+        <h3 class = "temp-card">${this.weatherConversion()}&deg;F</h3> </div>
+        <div id = "celsius" class = "visually-hidden">
+        <h3 class = "temp-card">${this.cecliusConversion()}&deg;C<h3>
+        </div>
         <h3 class="text-center"><img class="currentweather img-fluid text-center pt-2" src="http://openweathermap.org/img/w/${this.icon}.png" alt=""/>
-        ${this.weatherConversion()}&deg;</h3>
+        </div>
         <h6 class="text-end weather-place">${this.city}</h6>
         </div>`
     
