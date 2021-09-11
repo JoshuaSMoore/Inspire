@@ -7,8 +7,8 @@
 }
 
 .task-row{
-  transform: translateY(6rem);
-  padding-right: 1rem;
+  transform: translateY(3rem);
+  padding-right:3rem;
 }
 
 .task-in{
@@ -41,7 +41,7 @@
 
 .currentweather{
   transform: translateX(20px)translateY(-60px);
-  min-width: 5rem;
+  min-width: 4rem;
 }
 
 .weather-place{
@@ -65,7 +65,7 @@
 /* Clock Style */
 
 .clockstyle{
- transform: translateY(150px);
+ transform: translateY(130px);
  font-size: 200%;
  font-family: 'Josefin Sans', sans-serif;
  color: ghostwhite;

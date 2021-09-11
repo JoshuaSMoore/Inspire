@@ -53,7 +53,7 @@
                 </div>
               </div>
             </div>
-            <div class="card-footer text-muted  bg-transparent d-flex justify-content-center">
+            <div class="card-footer  bg-transparent d-flex justify-content-center">
               <form onsubmit = "app.taskController.addTask(event)">
                 <input type = "text" name ="taskdescription" minlength="3" maxlength="50" required placeholder="New Task"/><button type = "submit" class = "btn btn secondary shadow">Add</button>
                 <br>
@@ -70,8 +70,10 @@
           <div class="row py-2 quote-footer justify-content-bottom"> 
             <div class="col-12-text-center">
               <figure>
-                <blockquote class="blockquote">
-              <div id="quote" onmouseenter="app.quoteController.visibleAuthor()">
+                <blockquote>
+                  <div id="quote" onmouseover="app.quoteController.visibleAuthor()">
+                  </blockquote>
+                </figure>
               </div>
               </div>
       </div>
