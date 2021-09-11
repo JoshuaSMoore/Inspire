@@ -5,6 +5,7 @@ class AppState extends EventEmitter {
   // /** @type {import('./Models/Quote').Quote} */
    quote = {}
 
+  author = ''
    time = null
 
    image = null

@@ -5,15 +5,22 @@ import { quoteService } from "../Services/QuoteService.js";
 
 
 function _drawQuote() {
-  let template = ''
-  document.getElementById('quotes').innerHTML = ProxyState.quote.Template
+  document.getElementById('quote').innerHTML = /*html*/`
+  <p class = "fs-5">'${ProxyState.quote}</p>
+  <p id="author" class="visually-hidden">-${ProxyState.author} 
+  `
 }
 
 export class QuoteController {
   constructor() {
     ProxyState.on('quote', _drawQuote)
+    ProxyState.on('author', _drawQuote)
     quoteService.getQuote()
     _drawQuote()
+  }
+
+  visibleAuthor(){
+    document.getElementById('author').classList.toggle('visually-hidden')
   }
 }
 
