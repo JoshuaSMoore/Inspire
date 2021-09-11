@@ -1,1 +1,15 @@
 /* BASIC STYLES HERE */
+.weatherCard{
+  color: rgb(222, 121, 240);
+}
+
+
+.task-list{
+  background-color: rgba(0, 255, 128, 0.239);
+  min-width: 35rem;
+  position: center;
+}
+
+.task-in{
+background-color: rgba(250, 203, 196, 0.308);
+}

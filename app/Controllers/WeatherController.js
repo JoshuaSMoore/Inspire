@@ -1,9 +1,10 @@
 import { ProxyState } from "../AppState.js";
+import { weatherService } from "../Services/WeatherService.js";
 
 function _drawWeather() {
-let template = ''
-ProxyState.weather.forEach(weather => template += weather.Template)
-document.getElementById('weather').innerHTML = template
+
+document.getElementById('weather').innerHTML = ProxyState.weather.Template
+
 }
 
 
@@ -11,7 +12,15 @@ document.getElementById('weather').innerHTML = template
 
 export class WeatherController {
 constructor(){
+ProxyState.on('weather', _drawWeather);
+this.getWeather()
 
+
+}
+
+
+getWeather(){
+  weatherService.getWeather()
 }
 
 }

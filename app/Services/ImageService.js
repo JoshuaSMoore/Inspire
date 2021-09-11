@@ -1,4 +1,6 @@
 import { ProxyState } from "../AppState.js"
+import { Image } from "../Models/Image.js"
+
 
 
 // @ts-ignore
@@ -7,9 +9,10 @@ const imageApi = axios.create({
 })
 
 class ImageService{
-  async getImage(url){
-    let res = await imageApi.get(url)
-    ProxyState.image = new Image(res.data.url)
+  async getImage(){
+    let res = await imageApi.get()
+    ProxyState.image = new Image(res.data)
+    console.log('picture is happening now')
   }
 }
 

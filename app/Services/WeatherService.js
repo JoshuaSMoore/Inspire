@@ -12,9 +12,13 @@ class WeatherService{
   async getWeather(){
     let res = await weatherApi.get()
     console.log('did weather get?', res);
-    ProxyState.weather = res.data.map(w => new Weather(w))
+    ProxyState.weather = new Weather(res.data);
   }
+
 }
+
+
+
 
 
 export const weatherService = new WeatherService
