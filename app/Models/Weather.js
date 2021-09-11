@@ -30,8 +30,10 @@ export class Weather {
   
     get Template(){
         return /*html*/`
-        <h4 class="weatherCard ps-1">${this.city}</h4>
-        <img class=" img-fluid" src="http://openweathermap.org/img/w/${this.icon}.png" alt=""/> <h4 class="weatherCard ps-2">${this.weatherConversion()}&deg;</h4>
+        <div class = "col-m-12">
+        <h3 class="text-center"><img class="currentweather img-fluid text-center pt-2" src="http://openweathermap.org/img/w/${this.icon}.png" alt=""/>
+        ${this.weatherConversion()}&deg;</h3>
+        <h6 class="text-end weather-place">${this.city}</h6>
         </div>`
     
     }

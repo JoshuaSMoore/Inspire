@@ -10,7 +10,14 @@ export class Quote{
 get Template(){
   return /*html*/`
   <div class="col-12-text-center">
-    <h5>'${this.quote}</h5>
+    <figure class="text-center">
+    <blockquote class="blockquote">
+    <p class = "fs-5">'${this.quote}</p>
+    </blockquote>
+    <div><figcaption class="blockquote-footer">
+    ${this.author} 
+    </figcaption></div>
+    </figure>
     </div>
     `
 }

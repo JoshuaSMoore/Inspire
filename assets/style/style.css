@@ -1,15 +1,72 @@
-/* BASIC STYLES HERE */
-.weatherCard{
-  color: rgb(222, 121, 240);
-}
-
-
+/* Task Styles */
 .task-list{
-  background-color: rgba(0, 255, 128, 0.239);
-  min-width: 35rem;
+  background-color: rgba(24, 214, 189, 0.178);
+  min-width: 25rem;
+  max-height: 25rem;
   position: center;
 }
 
+.task-row{
+  transform: translateY(6rem);
+  padding-right: 1rem;
+}
+
 .task-in{
-background-color: rgba(250, 203, 196, 0.308);
+  background-color: rgba(250, 203, 196, 0.342);
+  max-height: 4rem;
+}
+
+.list-content{
+  position:relative
+}
+
+.list-scroll{
+  max-height: 17rem;
+  overflow-y: auto;
+}
+
+.deleted{
+  transform: translateY(-23px);
+  position: relative;
+}
+
+
+/* Weather Style */
+
+.weatherCard{
+  color: rgb(255, 255, 255);
+  position:relative;
+  background-color:transparent;
+}
+
+.currentweather{
+  transform: translateX(20px);
+  min-width: 5rem;
+}
+
+.weather-place{
+  transform: translateY(-30px)translateX(-10px);
+}
+
+/* Quote Style */
+
+.quote-footer{
+  color:ghostwhite;
+  font-family: 'Kaisei HarunoUmi', serif;
+  font-style: normal;
+}
+
+
+
+/* Clock Style */
+
+.clockstyle{
+ transform: translateY(150px);
+ font-size: 200%;
+ font-family: 'Josefin Sans', sans-serif;
+ color: ghostwhite;
+}
+
+.clockFont{
+  font-size: 220%;
 }
