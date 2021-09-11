@@ -21,7 +21,7 @@ export class Weather {
       
       cecliusConversion(){
     
-      let celcius = (((this.kelvin - 273.15) * 1.8) +32) -32
+      let celcius = ((this.kelvin - 273.15))
    
         return Math.floor(celcius)
     }
