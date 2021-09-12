@@ -6,10 +6,9 @@ function _drawTask(){
   ProxyState.tasks.forEach(t => template += t.Template)
   document.getElementById('tasks').innerHTML = template
 
-}
+  let count = ProxyState.tasks.filter((t) => t.completed);
+  document.getElementById('task-count').innerHTML = `${count.length} out of ${ProxyState.tasks.length} tasks completed`
 
-function _drawTaskCount(){
-document.getElementById('task-count').innerHTML = ProxyState.taskCount.toString()
 }
 
 function _drawFinishedTask(){
@@ -19,7 +18,7 @@ export class TaskController {
   constructor(){
 _drawTask()
 ProxyState.on('tasks', _drawTask)
-ProxyState.on('taskCount', _drawTaskCount)
+
 ProxyState.on('completed', _drawFinishedTask)
 
   }
@@ -44,13 +43,14 @@ ProxyState.on('completed', _drawFinishedTask)
 
 }
 
-removeTask(id){
-  taskService.removeTask(id)
-}
 
 finishedTask(Taskid){
   
- taskService.finishedTask(Taskid)
+  taskService.finishedTask(Taskid)
+}
+removeTask(id){
+  
+  taskService.removeTask(id)
 }
 
 }
