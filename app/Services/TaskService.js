@@ -41,7 +41,7 @@ this.getTasks()
 
 }
 async removeTask(id){
-  let yes = confirm("Are you sure you want to delete this Todo?")
+  let yes = confirm("Are you positive you want to delete this?")
   if(yes == true)
   await taskApi.delete(id)
 this.getTasks()
