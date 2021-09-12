@@ -19,8 +19,7 @@ getTime(){
     hour = 12;
     am_pm = "AM";
   }
-  // @ts-ignore
-  hour = (hour < 10 ? "0" : "") + hour;
+
   // @ts-ignore
   min = (min < 10 ? "0" : "") + min;
   // @ts-ignore

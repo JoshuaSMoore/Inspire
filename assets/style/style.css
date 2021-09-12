@@ -30,6 +30,16 @@
   position: relative;
 }
 
+.addbutton{
+  background-color:rgba(24, 214, 189, 0.315) ;
+  color: ghostwhite;
+  transform: translateY(-2px);
+}
+
+.done{
+  transform: translateX(20px);
+}
+
 
 /* Weather Style */
 
@@ -65,12 +75,24 @@
 /* Clock Style */
 
 .clockstyle{
- transform: translateY(130px);
+ transform: translateY(120px);
  font-size: 200%;
  font-family: 'Josefin Sans', sans-serif;
  color: ghostwhite;
 }
 
 .clockFont{
-  font-size: 220%;
+  font-size: 250%;
+}
+
+/* nav */
+
+.drop-menu{
+  background-color:rgba(24, 214, 189, 0.178) ;
+  color: ghostwhite;
+}
+
+.button-menu{
+  background-color: rgba(194, 236, 57, 0.226);
+  color: ghostwhite;
 }
