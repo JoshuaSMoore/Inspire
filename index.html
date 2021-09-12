@@ -68,6 +68,7 @@
               <form onsubmit = "app.taskController.addTask(event)">
                 <input type = "text" name ="taskdescription" minlength="3" maxlength="50" required placeholder="New Task"/><button type = "submit" class = "btn btn shadow addbutton">Add</button>
                 <br>
+                <p class ="text-light ps-3 done visually-hidden">Completed Tasks:<span id = "completed-task">0</span>/<span id = "task-count">0</span></p>
               </form>
             </div>
           </div>
@@ -89,7 +90,7 @@
       </div>
     </div>
   </footer>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
